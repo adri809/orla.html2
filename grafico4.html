@@ -6,8 +6,20 @@
   <body>
     <div id="container">
       <iframe width="1136" height="702" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS208PX9uvSzuoelXtHLMg3jYo4Whu-lUU-IfdingFzUVJo3gABHxnUv-0yNfRX5MABnjFH4HbRf_EE/pubchart?oid=965164944&amp;format=interactive"></iframe>
-      <div class="d-flex align-items-center justify-content-center mt-5">
-        <button class="btn btn-primary btn-lg" onclick="window.location.href='https://adri809.github.io/orla.html2/projects.html'">Volver a las encuestas</button>
+      <button id="botonRedireccion">Redirigir a otra página</button>
+        <script>
+          // Función para cerrar el script y redirigir a otra página
+          function cerrarScriptYRedirigir() {
+            // Cierra el script actual
+            window.close();
+            
+            // Redirige a la URL deseada
+            window.location.href = "https://adri809.github.io/orla.html2/projects.html";
+          }
+      
+          // Asigna la función al evento click del botón
+          document.getElementById("botonRedireccion").addEventListener("click", cerrarScriptYRedirigir);
+        </script>
     </body>
 </html>
 
