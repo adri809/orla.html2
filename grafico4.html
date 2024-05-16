@@ -8,10 +8,17 @@
         <iframe width="1136" height="702" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS208PX9uvSzuoelXtHLMg3jYo4Whu-lUU-IfdingFzUVJo3gABHxnUv-0yNfRX5MABnjFH4HbRf_EE/pubchart?oid=965164944&amp;format=interactive"></iframe>
     </div>
     <div class="d-flex align-items-center justify-content-center mt-5">
-        <!-- El botón abre la página en una nueva pestaña -->
-        <button class="btn btn-primary btn-lg" onclick="window.open('https://adri809.github.io/orla.html2/projects.html', '_blank')">Volver a las encuestas</button>
+        <!-- El botón ejecuta un script que abre la página en una nueva pestaña después de un breve retraso -->
+        <button class="btn btn-primary btn-lg" onclick="abrirEnNuevaPestana()">Volver a las encuestas</button>
     </div>
+
+    <script>
+        function abrirEnNuevaPestana() {
+            // Esperar 100 milisegundos antes de abrir la página en una nueva pestaña
+            setTimeout(function() {
+                window.open('https://adri809.github.io/orla.html2/projects.html', '_blank');
+            }, 100);
+        }
+    </script>
 </body>
 </html>
-
-
